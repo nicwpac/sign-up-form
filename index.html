@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="hero">
+        <div id="title">
+            <img src="images/odin-lined.png">
+            <h1>ODIN</h1>
+        </div>
+    </div>
+    <div id="content">
+        <div id="intro">
+            <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <form>
+            <h3>Let's do this!</h3>
+            <div class="form-content">
+                <div class=form-group>
+                    <label for="name-first">FIRST NAME</label>
+                    <input type="text" id="name-first" class="show-validity" minlength="2" required>
+                </div>
+                <div class=form-group>
+                    <label for="name-last">LAST NAME</label>
+                    <input type="text" id="name-first" />
+                </div>
+            </div>
+            <div class="form-content">
+                <div class=form-group>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" class="show-validity" required />
+                </div>
+                <div class=form-group>
+                    <label for="phonenum">PHONE NUMBER</label>
+                    <input type="tel" id="phonenum" required minlength="4"/>
+                </div>
+            </div>
+            <div class="form-content">
+                <div class=form-group>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" class="show-validity" minlength="8" required>
+                </div>
+                <div class=form-group>
+                    <label for="password-confirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="password-confirm" class="show-validity" required>
+                </div>
+            </div>
+        </form>
+
+        <div id="create-acc">
+            <button>Create Account</button>
+            <p>Already have an account? <a href="https://google.com">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>

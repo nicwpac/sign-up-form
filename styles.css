@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Norse";
+    src: url(fonts/Norse/Norse.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Norse-bold";
+    src: url(fonts/Norse/Norsebold.otf);
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+:root {
+    --primary-bg-color: #1e90ff;
+    --primary-color: #ffffff;
+    --low-focus: rgb(37, 37, 37);
+}
+
+*:not(h1) {
+    font-family: "Roboto";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    height: 100vh;
+}
+
+#hero {
+    background-image: url(images/leaves.avif);
+}
+
+#title {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20vh;
+    padding: 0 20vh;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    
+    font-family: "norse-bold";
+    font-size: 3rem;
+}
+
+#title h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#title img {
+    height: 100px;
+}
+
+#content {
+    background-color: rgb(245, 246, 247);
+}
+
+#intro {
+    padding: 10vh 12vw 3vh 3vw;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-wrap: balance;
+}
+
+form {
+    background-color: white;
+    padding: 2vh 3vw 0 3vw;
+}
+
+form h3 {
+    font-size: 1.5rem;
+    color: var(--low-focus);
+    font-weight: 500;
+}
+
+.form-content {
+    display: flex;
+    gap: 50px;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    color: var(--low-focus);
+    font-size: small;
+    font-weight: 450;
+    letter-spacing: 2px;
+}
+
+.form-group input {
+    border: 1px solid #E5E7EB;
+    height: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border: 1px solid rgb(0, 89, 255);
+    box-shadow: 2px 2px 3px rgb(146, 146, 146);
+}
+
+#create-acc {
+    padding: 3vh 3vw;
+}
+
+#create-acc a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+#create-acc button {
+    padding: 8px 24px;
+    border: none;
+    background-color: #596D48;
+    color:white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgb(146, 146, 146);
+}
+
+#create-acc button:hover {
+    background-color: #4b5f3a;
+}
+
+#create-acc button:active {
+    background-color: #3e502f;
+}
+
+.show-validity:user-invalid {
+    border: 1px solid red;
+}
+.show-validity:user-valid {
+    border: 1px solid lightgreen;
+}
